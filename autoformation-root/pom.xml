@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>dz.cst.wt.autoformation</groupId>
+	<artifactId>autoformation-root</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>Alcara</id>
+			<name>Alcara Repository</name>
+			<url>http://dev.alcire/repository</url>
+		</repository>
+		<repository>
+			<id>Artifactory</id>
+			<name>Artifactory Repository</name>
+			<url>http://vxjnkn1.retraite.lan/artifactory/repo</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>plugins-repos</id>
+			<name>plugins-repos</name>
+			<url>http://vxjnkn1.retraite.lan/artifactory/repo</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>5.12.1</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<modules>
+		<module>autoformation-cli</module>
+	</modules>
+</project>
